@@ -21,6 +21,8 @@
 		368C4D0929D9DE2200C29C03 /* RemoteLoginMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0829D9DE2200C29C03 /* RemoteLoginMessage.swift */; };
 		368C4D0B29D9DE5D00C29C03 /* LoginRequestPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0A29D9DE5D00C29C03 /* LoginRequestPolicy.swift */; };
 		368C4D0D29D9DEB500C29C03 /* LoginMessageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0C29D9DEB500C29C03 /* LoginMessageMapper.swift */; };
+		368C4D1229D9E09A00C29C03 /* UsersInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1129D9E09A00C29C03 /* UsersInfoLoader.swift */; };
+		368C4D1429D9E17400C29C03 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1329D9E17400C29C03 /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		368C4D0829D9DE2200C29C03 /* RemoteLoginMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoginMessage.swift; sourceTree = "<group>"; };
 		368C4D0A29D9DE5D00C29C03 /* LoginRequestPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestPolicy.swift; sourceTree = "<group>"; };
 		368C4D0C29D9DEB500C29C03 /* LoginMessageMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMessageMapper.swift; sourceTree = "<group>"; };
+		368C4D1129D9E09A00C29C03 /* UsersInfoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInfoLoader.swift; sourceTree = "<group>"; };
+		368C4D1329D9E17400C29C03 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		368C4CD929D9A6DA00C29C03 /* SimpleLogin */ = {
 			isa = PBXGroup;
 			children = (
+				368C4D0F29D9E01300C29C03 /* Home */,
 				368C4CEE29D9A7C700C29C03 /* Login */,
 				368C4CDA29D9A6DA00C29C03 /* AppDelegate.swift */,
 				368C4CDC29D9A6DA00C29C03 /* SceneDelegate.swift */,
@@ -121,6 +126,23 @@
 				368C4D0C29D9DEB500C29C03 /* LoginMessageMapper.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		368C4D0F29D9E01300C29C03 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				368C4D1029D9E02700C29C03 /* Feature */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		368C4D1029D9E02700C29C03 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				368C4D1129D9E09A00C29C03 /* UsersInfoLoader.swift */,
+				368C4D1329D9E17400C29C03 /* UserInfo.swift */,
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,10 +222,12 @@
 				368C4CDB29D9A6DA00C29C03 /* AppDelegate.swift in Sources */,
 				368C4D0929D9DE2200C29C03 /* RemoteLoginMessage.swift in Sources */,
 				368C4D0D29D9DEB500C29C03 /* LoginMessageMapper.swift in Sources */,
+				368C4D1229D9E09A00C29C03 /* UsersInfoLoader.swift in Sources */,
 				368C4D0B29D9DE5D00C29C03 /* LoginRequestPolicy.swift in Sources */,
 				368C4CF329D9A83100C29C03 /* LoginView.swift in Sources */,
 				368C4CDD29D9A6DA00C29C03 /* SceneDelegate.swift in Sources */,
 				368C4CFC29D9BC3800C29C03 /* LoginMessage.swift in Sources */,
+				368C4D1429D9E17400C29C03 /* UserInfo.swift in Sources */,
 				368C4D0729D9D19100C29C03 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

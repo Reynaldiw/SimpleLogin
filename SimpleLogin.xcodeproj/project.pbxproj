@@ -26,6 +26,7 @@
 		368C4D1729D9E25800C29C03 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1629D9E25800C29C03 /* HomeViewController.swift */; };
 		368C4D1929D9ED6A00C29C03 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1829D9ED6A00C29C03 /* UserInfoCell.swift */; };
 		368C4D1C29D9EDCC00C29C03 /* RemoteUserInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1B29D9EDCC00C29C03 /* RemoteUserInfoLoader.swift */; };
+		368C4D1E29D9F23900C29C03 /* UserInfoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1D29D9F23900C29C03 /* UserInfoMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		368C4D1629D9E25800C29C03 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		368C4D1829D9ED6A00C29C03 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
 		368C4D1B29D9EDCC00C29C03 /* RemoteUserInfoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUserInfoLoader.swift; sourceTree = "<group>"; };
+		368C4D1D29D9F23900C29C03 /* UserInfoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				368C4D1B29D9EDCC00C29C03 /* RemoteUserInfoLoader.swift */,
+				368C4D1D29D9F23900C29C03 /* UserInfoMapper.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				368C4D0529D9D15700C29C03 /* LoginHTTPClient.swift in Sources */,
+				368C4D1E29D9F23900C29C03 /* UserInfoMapper.swift in Sources */,
 				368C4D0129D9BDB000C29C03 /* LoginValidationUseCase.swift in Sources */,
 				368C4CF529D9ACFC00C29C03 /* LoginViewController.swift in Sources */,
 				368C4CFE29D9BC5F00C29C03 /* LoginService.swift in Sources */,

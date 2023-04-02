@@ -31,6 +31,7 @@
 		368C4D2229D9F28A00C29C03 /* UserInfoHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2129D9F28A00C29C03 /* UserInfoHTTPClient.swift */; };
 		368C4D2429D9F2AE00C29C03 /* URLSessionUserInfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2329D9F2AE00C29C03 /* URLSessionUserInfoClient.swift */; };
 		368C4D2629D9FBB200C29C03 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2529D9FBB200C29C03 /* ImageDownloader.swift */; };
+		368C4D2829D9FBF600C29C03 /* URLSessionImageDownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2729D9FBF600C29C03 /* URLSessionImageDownloaderClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		368C4D2129D9F28A00C29C03 /* UserInfoHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHTTPClient.swift; sourceTree = "<group>"; };
 		368C4D2329D9F2AE00C29C03 /* URLSessionUserInfoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionUserInfoClient.swift; sourceTree = "<group>"; };
 		368C4D2529D9FBB200C29C03 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		368C4D2729D9FBF600C29C03 /* URLSessionImageDownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionImageDownloaderClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				368C4D1F29D9F26300C29C03 /* RemoteUserInfo.swift */,
 				368C4D2129D9F28A00C29C03 /* UserInfoHTTPClient.swift */,
 				368C4D2329D9F2AE00C29C03 /* URLSessionUserInfoClient.swift */,
+				368C4D2729D9FBF600C29C03 /* URLSessionImageDownloaderClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				368C4D0B29D9DE5D00C29C03 /* LoginRequestPolicy.swift in Sources */,
 				368C4D2229D9F28A00C29C03 /* UserInfoHTTPClient.swift in Sources */,
 				368C4CF329D9A83100C29C03 /* LoginView.swift in Sources */,
+				368C4D2829D9FBF600C29C03 /* URLSessionImageDownloaderClient.swift in Sources */,
 				368C4CDD29D9A6DA00C29C03 /* SceneDelegate.swift in Sources */,
 				368C4CFC29D9BC3800C29C03 /* LoginMessage.swift in Sources */,
 				368C4D1429D9E17400C29C03 /* UserInfo.swift in Sources */,

@@ -7,22 +7,12 @@
 
 import UIKit
 
-final class URLSessionDownloaderClient: ImageDownloader {
-    func download(from url: URL, completion: @escaping (ImageDownloader.Result) -> Void) {
-        URLSession.shared.dataTask(with: url) { data, _, _ in
-            completion(data)
-        }.resume()
-    }
-}
-
-
-
 final class HomeViewController: UITableViewController {
     
     private var usersInfo = [UserInfo]()
     
     private let client: UserInfoHTTPClient = URLSessionUserInfoClient()
-    private let imageDownloader: ImageDownloader = URLSessionDownloaderClient()
+    private let imageDownloader: ImageDownloader = URLSessionImageDownloaderClient()
     private let url: URL = URL(string: "https://reqres.in/api/users?page=2")!
     private var loader: UserInfoLoader!
     

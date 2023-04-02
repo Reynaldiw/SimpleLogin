@@ -12,6 +12,7 @@
 		368C4CE429D9A6DC00C29C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368C4CE329D9A6DC00C29C03 /* Assets.xcassets */; };
 		368C4CE729D9A6DC00C29C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368C4CE529D9A6DC00C29C03 /* LaunchScreen.storyboard */; };
 		368C4CF329D9A83100C29C03 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CF229D9A83100C29C03 /* LoginView.swift */; };
+		368C4CF529D9ACFC00C29C03 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CF429D9ACFC00C29C03 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		368C4CE629D9A6DC00C29C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		368C4CE829D9A6DC00C29C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		368C4CF229D9A83100C29C03 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		368C4CF429D9ACFC00C29C03 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				368C4CF229D9A83100C29C03 /* LoginView.swift */,
+				368C4CF429D9ACFC00C29C03 /* LoginViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368C4CF529D9ACFC00C29C03 /* LoginViewController.swift in Sources */,
 				368C4CDB29D9A6DA00C29C03 /* AppDelegate.swift in Sources */,
 				368C4CF329D9A83100C29C03 /* LoginView.swift in Sources */,
 				368C4CDD29D9A6DA00C29C03 /* SceneDelegate.swift in Sources */,

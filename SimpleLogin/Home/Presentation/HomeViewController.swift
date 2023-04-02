@@ -7,22 +7,49 @@
 
 import UIKit
 
+final class URLSessionDownloaderClient: ImageDownloader {
+    func download(from url: URL, completion: @escaping (ImageDownloader.Result) -> Void) {
+        URLSession.shared.dataTask(with: url) { data, _, _ in
+            completion(data)
+        }.resume()
+    }
+}
+
+protocol ImageDownloader {
+    typealias Result = Data?
+    
+    func download(from url: URL, completion: @escaping (Result) -> Void)
+}
+
 final class HomeViewController: UITableViewController {
     
     private var usersInfo = [UserInfo]()
+    
+    private let client: UserInfoHTTPClient = URLSessionUserInfoClient()
+    private let imageDownloader: ImageDownloader = URLSessionDownloaderClient()
+    private let url: URL = URL(string: "https://reqres.in/api/users?page=2")!
+    private var loader: UserInfoLoader!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.allowsSelection = false
         
+        loader = RemoteUserInfoLoader(url: url, client: client)
         loadUsers()
     }
     
     private func loadUsers() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            self.usersInfo = UserInfo.prototypeData
-            self.tableView.reloadData()
+        loader.load { [weak self] receivedResult in
+            guard let self = self else { return }
+            
+            if let models = (try? receivedResult.get()) {
+                self.usersInfo = models
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
         }
     }
 }
@@ -36,6 +63,22 @@ extension HomeViewController {
         let model = usersInfo[indexPath.row]
         let cell = UserInfoCell()
         cell.configureView(with: model)
+        
+        if let imageURL = model.avatarImageURL {
+            imageDownloader.download(from: imageURL) { [weak self] data in
+                guard self != nil else { return }
+                
+                DispatchQueue.main.async {
+                    if let imageData = data {
+                        cell.avatarImageView.image = UIImage(data: imageData)
+                    } else {
+                        cell.avatarImageView.backgroundColor = .gray
+                    }
+                }
+            }
+        } else {
+            cell.avatarImageView.backgroundColor = .gray
+        }
         
         return cell
     }

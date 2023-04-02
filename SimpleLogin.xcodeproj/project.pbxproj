@@ -24,6 +24,7 @@
 		368C4D1229D9E09A00C29C03 /* UsersInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1129D9E09A00C29C03 /* UsersInfoLoader.swift */; };
 		368C4D1429D9E17400C29C03 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1329D9E17400C29C03 /* UserInfo.swift */; };
 		368C4D1729D9E25800C29C03 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1629D9E25800C29C03 /* HomeViewController.swift */; };
+		368C4D1929D9ED6A00C29C03 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1829D9ED6A00C29C03 /* UserInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		368C4D1129D9E09A00C29C03 /* UsersInfoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInfoLoader.swift; sourceTree = "<group>"; };
 		368C4D1329D9E17400C29C03 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		368C4D1629D9E25800C29C03 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		368C4D1829D9ED6A00C29C03 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				368C4D1629D9E25800C29C03 /* HomeViewController.swift */,
+				368C4D1829D9ED6A00C29C03 /* UserInfoCell.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				368C4D1729D9E25800C29C03 /* HomeViewController.swift in Sources */,
 				368C4D0929D9DE2200C29C03 /* RemoteLoginMessage.swift in Sources */,
 				368C4D0D29D9DEB500C29C03 /* LoginMessageMapper.swift in Sources */,
+				368C4D1929D9ED6A00C29C03 /* UserInfoCell.swift in Sources */,
 				368C4D1229D9E09A00C29C03 /* UsersInfoLoader.swift in Sources */,
 				368C4D0B29D9DE5D00C29C03 /* LoginRequestPolicy.swift in Sources */,
 				368C4CF329D9A83100C29C03 /* LoginView.swift in Sources */,

@@ -7,12 +7,6 @@
 
 import Foundation
 
-protocol UserInfoHTTPClient {
-    typealias Result = Swift.Result<(Data, HTTPURLResponse), Error>
-    
-    func get(from url: URL, completion: @escaping (Result) -> Void)
-}
-
 final class RemoteUserInfoLoader: UserInfoLoader {
     
     enum Error: Swift.Error {

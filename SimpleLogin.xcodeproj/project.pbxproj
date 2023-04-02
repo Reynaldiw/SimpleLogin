@@ -28,6 +28,7 @@
 		368C4D1C29D9EDCC00C29C03 /* RemoteUserInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1B29D9EDCC00C29C03 /* RemoteUserInfoLoader.swift */; };
 		368C4D1E29D9F23900C29C03 /* UserInfoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1D29D9F23900C29C03 /* UserInfoMapper.swift */; };
 		368C4D2029D9F26300C29C03 /* RemoteUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1F29D9F26300C29C03 /* RemoteUserInfo.swift */; };
+		368C4D2229D9F28A00C29C03 /* UserInfoHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2129D9F28A00C29C03 /* UserInfoHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		368C4D1B29D9EDCC00C29C03 /* RemoteUserInfoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUserInfoLoader.swift; sourceTree = "<group>"; };
 		368C4D1D29D9F23900C29C03 /* UserInfoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoMapper.swift; sourceTree = "<group>"; };
 		368C4D1F29D9F26300C29C03 /* RemoteUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUserInfo.swift; sourceTree = "<group>"; };
+		368C4D2129D9F28A00C29C03 /* UserInfoHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				368C4D1B29D9EDCC00C29C03 /* RemoteUserInfoLoader.swift */,
 				368C4D1D29D9F23900C29C03 /* UserInfoMapper.swift */,
 				368C4D1F29D9F26300C29C03 /* RemoteUserInfo.swift */,
+				368C4D2129D9F28A00C29C03 /* UserInfoHTTPClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				368C4D1229D9E09A00C29C03 /* UsersInfoLoader.swift in Sources */,
 				368C4D2029D9F26300C29C03 /* RemoteUserInfo.swift in Sources */,
 				368C4D0B29D9DE5D00C29C03 /* LoginRequestPolicy.swift in Sources */,
+				368C4D2229D9F28A00C29C03 /* UserInfoHTTPClient.swift in Sources */,
 				368C4CF329D9A83100C29C03 /* LoginView.swift in Sources */,
 				368C4CDD29D9A6DA00C29C03 /* SceneDelegate.swift in Sources */,
 				368C4CFC29D9BC3800C29C03 /* LoginMessage.swift in Sources */,

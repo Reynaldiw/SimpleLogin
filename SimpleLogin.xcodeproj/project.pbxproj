@@ -16,6 +16,8 @@
 		368C4CFC29D9BC3800C29C03 /* LoginMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CFB29D9BC3800C29C03 /* LoginMessage.swift */; };
 		368C4CFE29D9BC5F00C29C03 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CFD29D9BC5F00C29C03 /* LoginService.swift */; };
 		368C4D0129D9BDB000C29C03 /* LoginValidationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0029D9BDB000C29C03 /* LoginValidationUseCase.swift */; };
+		368C4D0529D9D15700C29C03 /* LoginHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0429D9D15700C29C03 /* LoginHTTPClient.swift */; };
+		368C4D0729D9D19100C29C03 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0629D9D19100C29C03 /* URLSessionHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		368C4CFB29D9BC3800C29C03 /* LoginMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMessage.swift; sourceTree = "<group>"; };
 		368C4CFD29D9BC5F00C29C03 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		368C4D0029D9BDB000C29C03 /* LoginValidationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidationUseCase.swift; sourceTree = "<group>"; };
+		368C4D0429D9D15700C29C03 /* LoginHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHTTPClient.swift; sourceTree = "<group>"; };
+		368C4D0629D9D19100C29C03 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				368C4D0029D9BDB000C29C03 /* LoginValidationUseCase.swift */,
+				368C4D0429D9D15700C29C03 /* LoginHTTPClient.swift */,
+				368C4D0629D9D19100C29C03 /* URLSessionHTTPClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368C4D0529D9D15700C29C03 /* LoginHTTPClient.swift in Sources */,
 				368C4D0129D9BDB000C29C03 /* LoginValidationUseCase.swift in Sources */,
 				368C4CF529D9ACFC00C29C03 /* LoginViewController.swift in Sources */,
 				368C4CFE29D9BC5F00C29C03 /* LoginService.swift in Sources */,
@@ -185,6 +192,7 @@
 				368C4CF329D9A83100C29C03 /* LoginView.swift in Sources */,
 				368C4CDD29D9A6DA00C29C03 /* SceneDelegate.swift in Sources */,
 				368C4CFC29D9BC3800C29C03 /* LoginMessage.swift in Sources */,
+				368C4D0729D9D19100C29C03 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,20 +50,10 @@ extension HomeViewController {
         let cell = UserInfoCell()
         cell.configureView(with: model)
         
-        if let imageURL = model.avatarImageURL {
-            imageDownloader.download(from: imageURL) { [weak self] data in
-                guard self != nil else { return }
-                
-                DispatchQueue.main.async {
-                    if let imageData = data {
-                        cell.avatarImageView.image = UIImage(data: imageData)
-                    } else {
-                        cell.avatarImageView.backgroundColor = .gray
-                    }
-                }
-            }
+        if let url = model.avatarImageURL {
+            downloadImage(from: url, to: cell)
         } else {
-            cell.avatarImageView.backgroundColor = .gray
+            cell.configureImage(with: nil)
         }
         
         return cell
@@ -71,6 +61,16 @@ extension HomeViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 86
+    }
+    
+    private func downloadImage(from url: URL, to cell: UserInfoCell) {
+        imageDownloader.download(from: url) { [weak self] data in
+            guard self != nil else { return }
+            
+            DispatchQueue.main.async {
+                cell.configureImage(with: data)
+            }
+        }
     }
 }
 
@@ -80,6 +80,13 @@ private extension UserInfoCell {
         
         nameLabel.text = "\(model.firstName) \(model.lastName)"
         emailLabel.text = model.email
+    }
+    
+    func configureImage(with data: Data?) {
+        guard let data = data else {
+            return avatarImageView.backgroundColor = .gray
+        }
+        avatarImageView.image = UIImage(data: data)
     }
 }
 

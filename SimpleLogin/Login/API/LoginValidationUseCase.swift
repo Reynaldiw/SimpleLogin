@@ -69,14 +69,6 @@ final class LoginValidationUseCase: LoginService {
     }
 }
 
-internal struct RemoteLoginMessage {
-    internal let token: String
-    
-    init(_ values: [String: Any]) {
-        self.token = values["token"] as? String ?? ""
-    }
-}
-
 extension RemoteLoginMessage {
     func toModel() -> LoginMessage {
         return .init(token: token)

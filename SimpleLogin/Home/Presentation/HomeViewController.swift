@@ -15,11 +15,7 @@ final class URLSessionDownloaderClient: ImageDownloader {
     }
 }
 
-protocol ImageDownloader {
-    typealias Result = Data?
-    
-    func download(from url: URL, completion: @escaping (Result) -> Void)
-}
+
 
 final class HomeViewController: UITableViewController {
     

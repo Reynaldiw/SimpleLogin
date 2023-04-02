@@ -23,6 +23,7 @@
 		368C4D0D29D9DEB500C29C03 /* LoginMessageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0C29D9DEB500C29C03 /* LoginMessageMapper.swift */; };
 		368C4D1229D9E09A00C29C03 /* UsersInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1129D9E09A00C29C03 /* UsersInfoLoader.swift */; };
 		368C4D1429D9E17400C29C03 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1329D9E17400C29C03 /* UserInfo.swift */; };
+		368C4D1729D9E25800C29C03 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1629D9E25800C29C03 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		368C4D0C29D9DEB500C29C03 /* LoginMessageMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMessageMapper.swift; sourceTree = "<group>"; };
 		368C4D1129D9E09A00C29C03 /* UsersInfoLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersInfoLoader.swift; sourceTree = "<group>"; };
 		368C4D1329D9E17400C29C03 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		368C4D1629D9E25800C29C03 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				368C4D1029D9E02700C29C03 /* Feature */,
+				368C4D1529D9E22F00C29C03 /* Presentation */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -143,6 +146,14 @@
 				368C4D1329D9E17400C29C03 /* UserInfo.swift */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		368C4D1529D9E22F00C29C03 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				368C4D1629D9E25800C29C03 /* HomeViewController.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +231,7 @@
 				368C4CF529D9ACFC00C29C03 /* LoginViewController.swift in Sources */,
 				368C4CFE29D9BC5F00C29C03 /* LoginService.swift in Sources */,
 				368C4CDB29D9A6DA00C29C03 /* AppDelegate.swift in Sources */,
+				368C4D1729D9E25800C29C03 /* HomeViewController.swift in Sources */,
 				368C4D0929D9DE2200C29C03 /* RemoteLoginMessage.swift in Sources */,
 				368C4D0D29D9DEB500C29C03 /* LoginMessageMapper.swift in Sources */,
 				368C4D1229D9E09A00C29C03 /* UsersInfoLoader.swift in Sources */,

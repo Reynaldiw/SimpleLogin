@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		368C4CDB29D9A6DA00C29C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CDA29D9A6DA00C29C03 /* AppDelegate.swift */; };
 		368C4CDD29D9A6DA00C29C03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CDC29D9A6DA00C29C03 /* SceneDelegate.swift */; };
-		368C4CDF29D9A6DA00C29C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4CDE29D9A6DA00C29C03 /* ViewController.swift */; };
-		368C4CE229D9A6DA00C29C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368C4CE029D9A6DA00C29C03 /* Main.storyboard */; };
 		368C4CE429D9A6DC00C29C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368C4CE329D9A6DC00C29C03 /* Assets.xcassets */; };
 		368C4CE729D9A6DC00C29C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368C4CE529D9A6DC00C29C03 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +17,6 @@
 		368C4CD729D9A6DA00C29C03 /* SimpleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368C4CDA29D9A6DA00C29C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		368C4CDC29D9A6DA00C29C03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		368C4CDE29D9A6DA00C29C03 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		368C4CE129D9A6DA00C29C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		368C4CE329D9A6DC00C29C03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		368C4CE629D9A6DC00C29C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		368C4CE829D9A6DC00C29C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +54,6 @@
 			children = (
 				368C4CDA29D9A6DA00C29C03 /* AppDelegate.swift */,
 				368C4CDC29D9A6DA00C29C03 /* SceneDelegate.swift */,
-				368C4CDE29D9A6DA00C29C03 /* ViewController.swift */,
-				368C4CE029D9A6DA00C29C03 /* Main.storyboard */,
 				368C4CE329D9A6DC00C29C03 /* Assets.xcassets */,
 				368C4CE529D9A6DC00C29C03 /* LaunchScreen.storyboard */,
 				368C4CE829D9A6DC00C29C03 /* Info.plist */,
@@ -127,7 +121,6 @@
 			files = (
 				368C4CE729D9A6DC00C29C03 /* LaunchScreen.storyboard in Resources */,
 				368C4CE429D9A6DC00C29C03 /* Assets.xcassets in Resources */,
-				368C4CE229D9A6DA00C29C03 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +131,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				368C4CDF29D9A6DA00C29C03 /* ViewController.swift in Sources */,
 				368C4CDB29D9A6DA00C29C03 /* AppDelegate.swift in Sources */,
 				368C4CDD29D9A6DA00C29C03 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +139,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		368C4CE029D9A6DA00C29C03 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				368C4CE129D9A6DA00C29C03 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		368C4CE529D9A6DC00C29C03 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,11 +274,10 @@
 				DEVELOPMENT_TEAM = YKPQ92PAK3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SimpleLogin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Login";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +301,10 @@
 				DEVELOPMENT_TEAM = YKPQ92PAK3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SimpleLogin/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Login";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

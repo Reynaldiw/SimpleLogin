@@ -29,6 +29,7 @@
 		368C4D1E29D9F23900C29C03 /* UserInfoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1D29D9F23900C29C03 /* UserInfoMapper.swift */; };
 		368C4D2029D9F26300C29C03 /* RemoteUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D1F29D9F26300C29C03 /* RemoteUserInfo.swift */; };
 		368C4D2229D9F28A00C29C03 /* UserInfoHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2129D9F28A00C29C03 /* UserInfoHTTPClient.swift */; };
+		368C4D2429D9F2AE00C29C03 /* URLSessionUserInfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2329D9F2AE00C29C03 /* URLSessionUserInfoClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		368C4D1D29D9F23900C29C03 /* UserInfoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoMapper.swift; sourceTree = "<group>"; };
 		368C4D1F29D9F26300C29C03 /* RemoteUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUserInfo.swift; sourceTree = "<group>"; };
 		368C4D2129D9F28A00C29C03 /* UserInfoHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHTTPClient.swift; sourceTree = "<group>"; };
+		368C4D2329D9F2AE00C29C03 /* URLSessionUserInfoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionUserInfoClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				368C4D1D29D9F23900C29C03 /* UserInfoMapper.swift */,
 				368C4D1F29D9F26300C29C03 /* RemoteUserInfo.swift */,
 				368C4D2129D9F28A00C29C03 /* UserInfoHTTPClient.swift */,
+				368C4D2329D9F2AE00C29C03 /* URLSessionUserInfoClient.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				368C4CF529D9ACFC00C29C03 /* LoginViewController.swift in Sources */,
 				368C4CFE29D9BC5F00C29C03 /* LoginService.swift in Sources */,
 				368C4CDB29D9A6DA00C29C03 /* AppDelegate.swift in Sources */,
+				368C4D2429D9F2AE00C29C03 /* URLSessionUserInfoClient.swift in Sources */,
 				368C4D1729D9E25800C29C03 /* HomeViewController.swift in Sources */,
 				368C4D0929D9DE2200C29C03 /* RemoteLoginMessage.swift in Sources */,
 				368C4D0D29D9DEB500C29C03 /* LoginMessageMapper.swift in Sources */,

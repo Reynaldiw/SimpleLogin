@@ -27,9 +27,14 @@ final class HomeViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureNavigationbar()
         tableView.allowsSelection = false
         
         loadUsers()
+    }
+    
+    private func configureNavigationbar() {
+        title = "Home"
     }
     
     private func loadUsers() {

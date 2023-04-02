@@ -11,17 +11,24 @@ final class HomeViewController: UITableViewController {
     
     private var usersInfo = [UserInfo]()
     
-    private let client: UserInfoHTTPClient = URLSessionUserInfoClient()
-    private let imageDownloader: ImageDownloader = URLSessionImageDownloaderClient()
-    private let url: URL = URL(string: "https://reqres.in/api/users?page=2")!
-    private var loader: UserInfoLoader!
+    private let imageDownloader: ImageDownloader
+    private var loader: UserInfoLoader
+    
+    init(imageDownloader: ImageDownloader, loader: UserInfoLoader) {
+        self.imageDownloader = imageDownloader
+        self.loader = loader
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.allowsSelection = false
         
-        loader = RemoteUserInfoLoader(url: url, client: client)
         loadUsers()
     }
     

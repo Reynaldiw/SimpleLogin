@@ -68,7 +68,9 @@ extension LoginViewController {
             
             DispatchQueue.main.async {
                 switch receivedResult {
-                case .success: break
+                case .success:
+                    let homeViewController = HomeViewControllerComposer.compose()
+                    self.navigationController?.pushViewController(homeViewController, animated: true)
                     
                 case let .failure(error):
                     self.map(error)

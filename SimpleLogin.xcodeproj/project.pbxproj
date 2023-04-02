@@ -20,6 +20,7 @@
 		368C4D0729D9D19100C29C03 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0629D9D19100C29C03 /* URLSessionHTTPClient.swift */; };
 		368C4D0929D9DE2200C29C03 /* RemoteLoginMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0829D9DE2200C29C03 /* RemoteLoginMessage.swift */; };
 		368C4D0B29D9DE5D00C29C03 /* LoginRequestPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0A29D9DE5D00C29C03 /* LoginRequestPolicy.swift */; };
+		368C4D0D29D9DEB500C29C03 /* LoginMessageMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D0C29D9DEB500C29C03 /* LoginMessageMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		368C4D0629D9D19100C29C03 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		368C4D0829D9DE2200C29C03 /* RemoteLoginMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoginMessage.swift; sourceTree = "<group>"; };
 		368C4D0A29D9DE5D00C29C03 /* LoginRequestPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestPolicy.swift; sourceTree = "<group>"; };
+		368C4D0C29D9DEB500C29C03 /* LoginMessageMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMessageMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				368C4D0629D9D19100C29C03 /* URLSessionHTTPClient.swift */,
 				368C4D0829D9DE2200C29C03 /* RemoteLoginMessage.swift */,
 				368C4D0A29D9DE5D00C29C03 /* LoginRequestPolicy.swift */,
+				368C4D0C29D9DEB500C29C03 /* LoginMessageMapper.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				368C4CFE29D9BC5F00C29C03 /* LoginService.swift in Sources */,
 				368C4CDB29D9A6DA00C29C03 /* AppDelegate.swift in Sources */,
 				368C4D0929D9DE2200C29C03 /* RemoteLoginMessage.swift in Sources */,
+				368C4D0D29D9DEB500C29C03 /* LoginMessageMapper.swift in Sources */,
 				368C4D0B29D9DE5D00C29C03 /* LoginRequestPolicy.swift in Sources */,
 				368C4CF329D9A83100C29C03 /* LoginView.swift in Sources */,
 				368C4CDD29D9A6DA00C29C03 /* SceneDelegate.swift in Sources */,

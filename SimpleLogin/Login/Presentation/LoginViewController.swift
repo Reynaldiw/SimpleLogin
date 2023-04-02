@@ -43,5 +43,58 @@ final class LoginViewController: UIViewController {
             loginView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             loginView.heightAnchor.constraint(equalToConstant: 152)
         ])
+        
+        loginView.loginButton.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
     }
 }
+
+
+//MARK: - Action
+
+extension LoginViewController {
+    @objc private func loginAction() {
+        login()
+    }
+}
+
+extension LoginViewController {
+    private func login() {
+        let request: [String: Any] = [
+            "email": loginView.emailField.text ?? "",
+            "password": loginView.passwordField.text ?? ""
+        ]
+        loginService.login(with: request) { [weak self] receivedResult in
+            guard let self = self else { return }
+            
+            DispatchQueue.main.async {
+                switch receivedResult {
+                case .success: break
+                    
+                case let .failure(error):
+                    self.map(error)
+                }
+            }
+        }
+    }
+    
+    private func map(_ error: Error) {
+        switch error as? LoginValidationUseCase.Error {
+        case .emailEmpty, .passwordEmpty:
+            presentAlert(message: "Please input all required field")
+            
+        case .invalidEmail:
+            presentAlert(message: "Invalid email")
+            
+        default:
+            presentAlert(title: "Failed", message: "Something went wrong!")
+        }
+    }
+    
+    private func presentAlert(title: String = "Warning", message: String) {
+        let alertViewController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertViewController.addAction(UIAlertAction(title: "Ok", style: .cancel))
+        
+        navigationController?.present(alertViewController, animated: true)
+    }
+}
+

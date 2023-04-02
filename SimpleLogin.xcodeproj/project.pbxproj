@@ -98,6 +98,7 @@
 		368C4CD929D9A6DA00C29C03 /* SimpleLogin */ = {
 			isa = PBXGroup;
 			children = (
+				368C4D2A29DA0A2000C29C03 /* Composer */,
 				368C4D2D29DA0E4300C29C03 /* Composer */,
 				368C4D0F29D9E01300C29C03 /* Home */,
 				368C4CEE29D9A7C700C29C03 /* Login */,

@@ -34,7 +34,9 @@ final class LoginValidationUseCase: LoginService {
             return completion(.failure(LoginValidationUseCase.map(error as! LoginRequestPolicy.Error)))
         }
         
-        client.login(from: url, with: request) { receivedResult in
+        client.login(from: url, with: request) { [weak self] receivedResult in
+            guard self != nil else { return }
+            
             switch receivedResult {
             case let .success((data, response)):
                 completion(LoginValidationUseCase.map(data, from: response))

@@ -29,7 +29,7 @@ final class LoginViewController: UIViewController {
     }
     
     private func configureNavigationBar() {
-        title = "Login Page"
+        title = "Login"
     }
     
     private func configureView() {

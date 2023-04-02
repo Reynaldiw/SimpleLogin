@@ -32,6 +32,8 @@
 		368C4D2429D9F2AE00C29C03 /* URLSessionUserInfoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2329D9F2AE00C29C03 /* URLSessionUserInfoClient.swift */; };
 		368C4D2629D9FBB200C29C03 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2529D9FBB200C29C03 /* ImageDownloader.swift */; };
 		368C4D2829D9FBF600C29C03 /* URLSessionImageDownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2729D9FBF600C29C03 /* URLSessionImageDownloaderClient.swift */; };
+		368C4D2F29DA0E6400C29C03 /* HomeViewControllerComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D2E29DA0E6400C29C03 /* HomeViewControllerComposer.swift */; };
+		368C4D3129DA0F2500C29C03 /* LoginViewControllerComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C4D3029DA0F2500C29C03 /* LoginViewControllerComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		368C4D2329D9F2AE00C29C03 /* URLSessionUserInfoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionUserInfoClient.swift; sourceTree = "<group>"; };
 		368C4D2529D9FBB200C29C03 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		368C4D2729D9FBF600C29C03 /* URLSessionImageDownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionImageDownloaderClient.swift; sourceTree = "<group>"; };
+		368C4D2E29DA0E6400C29C03 /* HomeViewControllerComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerComposer.swift; sourceTree = "<group>"; };
+		368C4D3029DA0F2500C29C03 /* LoginViewControllerComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		368C4CD929D9A6DA00C29C03 /* SimpleLogin */ = {
 			isa = PBXGroup;
 			children = (
+				368C4D2D29DA0E4300C29C03 /* Composer */,
 				368C4D0F29D9E01300C29C03 /* Home */,
 				368C4CEE29D9A7C700C29C03 /* Login */,
 				368C4CDA29D9A6DA00C29C03 /* AppDelegate.swift */,
@@ -188,6 +193,15 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		368C4D2D29DA0E4300C29C03 /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				368C4D2E29DA0E6400C29C03 /* HomeViewControllerComposer.swift */,
+				368C4D3029DA0F2500C29C03 /* LoginViewControllerComposer.swift */,
+			);
+			path = Composer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +278,8 @@
 				368C4CF529D9ACFC00C29C03 /* LoginViewController.swift in Sources */,
 				368C4CFE29D9BC5F00C29C03 /* LoginService.swift in Sources */,
 				368C4CDB29D9A6DA00C29C03 /* AppDelegate.swift in Sources */,
+				368C4D2F29DA0E6400C29C03 /* HomeViewControllerComposer.swift in Sources */,
+				368C4D3129DA0F2500C29C03 /* LoginViewControllerComposer.swift in Sources */,
 				368C4D2629D9FBB200C29C03 /* ImageDownloader.swift in Sources */,
 				368C4D2429D9F2AE00C29C03 /* URLSessionUserInfoClient.swift in Sources */,
 				368C4D1729D9E25800C29C03 /* HomeViewController.swift in Sources */,
